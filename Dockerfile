@@ -4,6 +4,7 @@ RUN apk --update add nginx php5-fpm && \
     mkdir -p /run/nginx
 
 ADD www /www
+ADD tmp /tmp
 ADD nginx.conf /etc/nginx/
 ADD php-fpm.conf /etc/php5/php-fpm.conf
 ADD run.sh /run.sh
